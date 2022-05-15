@@ -19,28 +19,28 @@
 }
 
 body {
-	background-image: url(assets/images/pexels-designecologist-1239385.jpg);
+	background-image: url(assets/images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
     color: aliceblue;
-    line-height: 1.5em;
+    line-height: 2em;
     letter-spacing: 0.2em;
 }
 .wrapper-slider {
-    max-width: 1066px;
+    max-width: 1070px;
     margin: 20px auto 0;
     
 }
-
 .wrapper-slider > input {
 	display: none;
 }
 .mem-slider {
     position: relative;
-    min-height: 616px;
-    border: #f0768b 8px solid;
+    min-height: 620px;
+    width: inherit;
+    border: orangered 10px solid;
     box-shadow: 0 7px 20px rgba(0,0,0,.5);
     border-radius: 10px;    
     margin-bottom: 20px;
@@ -52,8 +52,7 @@ body {
     width: 100%;
     height: 600px;    
     position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     /*opacity: 0;
     z-index: 0;
     background-repeat: no-repeat;
@@ -78,21 +77,31 @@ body {
 }
 
 .slide-1 > .part {    
-    background-image: url(assets/images/pexels-designecologist-1239385.jpg); 
-      
+    background-image: url(assets/images/cats1.jpg);       
 }
+
 .slide-2 > .part {
-    background-image: url(assets/images/pexels-lumn-316466.jpg);
+    background-image: url(assets/images/full-stack.jpg);
 }
+
 .slide-3 > .part {
-    background-image: url(assets/images/beginners\ and\ seniors.jpg);
+    background-image: url(assets/images/my_day.jpg);
 }
 .slide-4 > .part {
-    background-image: url(assets/images/stolen\ code.jpg);
+    background-image: url(assets/images/1_not_1.jpg);
 }
 
 .slide-5 > .part {
-    background-image: url(assets/images/stolen\ code.jpg);
+    background-image: url(assets/images/change_code.jpg);
+}
+.slide-6 > .part {
+    background-image: url(assets/images/stolen_code.jpg);
+}
+.slide-7 > .part {
+    background-image: url(assets/images/pixel.jpg);
+}
+.slide-8 > .part {
+    background-image: url(assets/images/code.jpg);
 }
 
 .slides .part-2 {
@@ -119,13 +128,20 @@ body {
     background-position: -900px 0;
     transition-delay: 1.2s;
 }
+.slides .part-8 {
+    background-position: -900px 0;
+    transition-delay: 1.2s;
+}
   
  
 #slide-1:checked ~ .mem-slider .slide-1 .part,
 #slide-2:checked ~ .mem-slider .slide-2 .part,
 #slide-3:checked ~ .mem-slider .slide-3 .part,
 #slide-4:checked ~ .mem-slider .slide-4 .part,
-#slide-5:checked ~ .mem-slider .slide-5 .part {
+#slide-5:checked ~ .mem-slider .slide-5 .part,
+#slide-6:checked ~ .mem-slider .slide-6 .part,
+#slide-7:checked ~ .mem-slider .slide-7 .part,
+#slide-8:checked ~ .mem-slider .slide-8 .part {
     opacity: 1;
     z-index: 1;
     transform: rotateY(0) translateZ(0) scale(1);
@@ -137,7 +153,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 10px;
-    background-color: #f0768b;
+    background-color: orangered;
     align-items: center;
 }
 
@@ -145,8 +161,9 @@ body {
     display: flex;
     align-items: center;
     padding: 1em 1em 1em 0.2em;
+    margin: 0.6em 0;
     width: 50%;
-    font-size: 2em;
+    font-size: 1.5em;
     position: relative;
 }
 .frases {
@@ -191,7 +208,10 @@ body {
 #slide-2:checked ~ .wrapper-2 > .controls label:nth-of-type(2),
 #slide-3:checked ~ .wrapper-2 > .controls label:nth-of-type(3),
 #slide-4:checked ~ .wrapper-2 > .controls label:nth-of-type(4),
-#slide-5:checked ~ .wrapper-2 > .controls label:nth-of-type(5) {
+#slide-5:checked ~ .wrapper-2 > .controls label:nth-of-type(5),
+#slide-6:checked ~ .wrapper-2 > .controls label:nth-of-type(6),
+#slide-7:checked ~ .wrapper-2 > .controls label:nth-of-type(7),
+#slide-8:checked ~ .wrapper-2 > .controls label:nth-of-type(8) {
 	background: none;
 }
  
@@ -211,7 +231,10 @@ body {
 #slide-2:checked ~ .wrapper-2 > .container-frases > .frase-2,
 #slide-3:checked ~ .wrapper-2 > .container-frases > .frase-3,
 #slide-4:checked ~ .wrapper-2 > .container-frases > .frase-4,
-#slide-5:checked ~ .wrapper-2 > .container-frases > .frase-5 {
+#slide-5:checked ~ .wrapper-2 > .container-frases > .frase-5,
+#slide-6:checked ~ .wrapper-2 > .container-frases > .frase-6,
+#slide-7:checked ~ .wrapper-2 > .container-frases > .frase-7,
+#slide-8:checked ~ .wrapper-2 > .container-frases > .frase-8  {
 	opacity: 1;
     z-index: 1;
 	-webkit-transform: scale(1);
